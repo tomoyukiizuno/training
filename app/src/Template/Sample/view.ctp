@@ -6,11 +6,11 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Sample'), ['action' => 'edit', $sample->ID]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Sample'), ['action' => 'delete', $sample->ID], ['confirm' => __('Are you sure you want to delete # {0}?', $sample->ID)]) ?> </li>
-        <li><?= $this->Html->link(__('List Sample'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Sample'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('サイドメニュー') ?></li>
+        <li><?= $this->Html->link(__('編集'), ['action' => 'edit', $sample->ID]) ?> </li>
+        <li><?= $this->Form->postLink(__('削除'), ['action' => 'delete', $sample->ID], ['confirm' => __('Are you sure you want to delete # {0}?', $sample->ID)]) ?> </li>
+        <li><?= $this->Html->link(__('ホーム'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('新規追加'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="sample view large-9 medium-8 columns content">

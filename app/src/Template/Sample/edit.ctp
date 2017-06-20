@@ -7,7 +7,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Form->postLink(
-                __('Delete'),
+                __('削除'),
                 ['action' => 'delete', $sample->ID],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $sample->ID)]
             )

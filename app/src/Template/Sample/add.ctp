@@ -12,7 +12,7 @@
 <div class="sample form large-9 medium-8 columns content">
     <?= $this->Form->create($sample) ?>
     <fieldset>
-        <legend><?= __('Add Sample') ?></legend>
+        <legend><?= __('追加') ?></legend>
         <?php
             echo $this->Form->control('score');
             echo $this->Form->control('name');
