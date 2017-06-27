@@ -11,6 +11,7 @@ use App\Controller\AppController;
  * @method \App\Model\Entity\Sample[] paginate($object = null, array $settings = [])
  */
 class SampleController extends AppController
+
 {
 
     /**
@@ -24,6 +25,11 @@ class SampleController extends AppController
 
         $this->set(compact('sample'));
         $this->set('_serialize', ['sample']);
+
+        
+        $this->viewBuilder()->layout('sample');
+        $msg = "これは、サンプルアクションです。";
+        $this->set('message', $msg);
     }
 
     /**
