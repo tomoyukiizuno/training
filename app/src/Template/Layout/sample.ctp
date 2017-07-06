@@ -57,16 +57,20 @@ echo $this->fetch('script');
 	        </ul>
 	        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
 	    </div>
-	    <div>
-		    <?=$this->Form->create(null,[
-		        'type' => 'post',
-		        'url' => ['controller' => 'Sample', 'action' => 'index']]
-		    ) ?>
-		    <?=$this->Form->text('text1') ?>
-		    <?=$this->Form->submit('OK') ?>
-		    <?=$this->Form->end() ?>
-		    </form>
-		</div>
+		<div>
+	    <p><?= $message ?></p>
+	    <?=$this->Form->create(null,[
+	        'type' => 'post',
+	        'url' => ['controller' => 'Sample', 'action' => 'add']]
+	    ) ?>
+	    <?php
+            echo $this->Form->control('score');
+            echo $this->Form->control('name');
+        ?>
+	    <?=$this->Form->submit('OK') ?>
+	    <?=$this->Form->end() ?>
+	    </form>
+</div>
 	</div>
 </div>
 </body>
